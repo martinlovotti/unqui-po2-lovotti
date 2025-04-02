@@ -1,5 +1,5 @@
 package ar.edu.unq.po2.prueba;
-
+//Esto es una prueba
 public class Punto {
 	private float x;
 	private float y;
