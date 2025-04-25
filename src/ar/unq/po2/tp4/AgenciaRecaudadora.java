@@ -18,7 +18,6 @@ public class AgenciaRecaudadora implements Agencia {
 			 total += i.calcularMonto();		
 		}
 		System.out.println("Total recaudado: $" + total);
-
 	}
 
 }
