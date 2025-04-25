@@ -19,7 +19,13 @@ public class Caja {
 		}
 		return total;
 	}
-
 	
+	
+	//Desde la caja va a registrar Pago de cada cobrable que este en su lista//
+	public void registrarTotal() {
+		for (Cobrable i : productos) {
+			 i.registrarPago(agencia);		
+		}
+	}
 	
 }

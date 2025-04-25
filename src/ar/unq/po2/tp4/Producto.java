@@ -16,6 +16,7 @@ public abstract class Producto implements Cobrable{
 		return (stock > 0);
 	}
 	
+	@Override
 	public void registrarEnCaja(Caja caja) {
 		if (hayStock()) {
 			caja.agregarProducto(this);

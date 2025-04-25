@@ -14,4 +14,10 @@ public class Servicio implements Cobrable{
 		// TODO Auto-generated method stub
 		return unidadesConsumidas * costoPorUnidad;
 	}
+
+	@Override
+	public void registrarEnCaja(Caja c) {
+		// TODO Auto-generated method stub
+		c.agregarProducto(this);
+	}
 }
