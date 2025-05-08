@@ -12,7 +12,6 @@ public class MaquinaVideojuego {
 	public void jugar() {
 		EstadoActual.jugar(this);
 	}
-
 	public MaquinaVideojuego() {
 		this.cantidadDeFichas = 0;
 		this.EstadoActual = new EstadoVideojuegoInicial();
