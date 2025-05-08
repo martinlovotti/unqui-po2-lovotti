@@ -11,6 +11,7 @@ public class EstadoVideojuegoMultijugador extends EstadoVideojuego {
 	@Override
 	public void jugar(MaquinaVideojuego maquina) {
 		System.out.println("jugando 2 jugadores");
+		maquina.cantidadDeFichas = 0;
 		maquina.EstadoActual = new EstadoVideojuegoInicial();
 	}
 

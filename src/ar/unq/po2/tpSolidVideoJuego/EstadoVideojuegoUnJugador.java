@@ -10,8 +10,11 @@ public class EstadoVideojuegoUnJugador extends EstadoVideojuego {
 
 	@Override
 	public void jugar(MaquinaVideojuego maquina) {
+		
 		System.out.println("jugando un jugador");
+		maquina.cantidadDeFichas = 0;
 		maquina.EstadoActual = new EstadoVideojuegoInicial();
+		
 	}
 
 }
