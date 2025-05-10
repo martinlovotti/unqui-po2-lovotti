@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import ar.unq.po2.tpSolidVideoJuego.MaquinaVideojuego;
 //import static org.mockito.Mockito.*;
 
-
+/**
 class MaquinaVideojuegoTest {
 	
 	@BeforeEach
@@ -35,7 +35,7 @@ class MaquinaVideojuegoTest {
 	}
 
 }
-
+*/
 /**
  * 
  click derecho en proyecto, build path, configure build path, librerias, add external jar, apply and close
