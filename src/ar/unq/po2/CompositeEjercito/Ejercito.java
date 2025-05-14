@@ -11,6 +11,7 @@ public class Ejercito extends Personaje {
 	public void caminar(int x) {
 		for(Personaje p : integrantes) {
 			p.caminar(x);
+			posicion += 1;
 		}
 	}
 

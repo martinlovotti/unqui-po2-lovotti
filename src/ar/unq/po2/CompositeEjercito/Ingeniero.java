@@ -31,11 +31,13 @@ public class Ingeniero extends Personaje {
 	@Override
 	public void agregarLaja(int x) {
 		// TODO Auto-generated method stub
-		if (this.mapa.getPunto(x) == 0  || bolsaLajas == 0 ){
-			this.bolsaLajas -= 1;
-			this.mapa.setPunto(x,1);
+		if (this.mapa.getPunto(x) == 0){ //Primero verifica que no haya lajas en ese punto
+			if(this.getLajas() != 0) { // verifica que haya lajas en la bolsa 
+				this.mapa.setPunto(x,1); // coloca laja
+				this.bolsaLajas-= 1;	// descuenta laja de la bolsa		
+			}else {System.out.println("ya no hay lajas: " + this.bolsaLajas);} //ya no quedan lajas 
 		}
-		else { System.out.println("ya hay una laja en" + x + "O ya no hay lajas: " + this.bolsaLajas);}
+		else { System.out.println("ya hay una laja en" + x);} //ya hay una laja en ese punto
 		}
 	}
 	

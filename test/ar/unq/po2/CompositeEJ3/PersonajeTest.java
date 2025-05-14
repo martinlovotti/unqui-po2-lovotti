@@ -33,6 +33,7 @@ public class PersonajeTest {
 		
 	}
 	
+	//Ingeniero
 	@Test
 	void ingenieroCaminayColocaLaja() {
 		ingenieroReal.caminar(2);
@@ -42,11 +43,33 @@ public class PersonajeTest {
 	@Test
 	void ingenieroCaminaHastaQuedarseSinLajas() {
 		ingenieroReal.caminar(4);
-		assertEquals( -1 , ingenieroReal.getLajas());
+		assertEquals( 0 , ingenieroReal.getLajas());
 	}
 	@Test
 	void ingenieroCaminaHastaQuedarseSinLajasYNoHayLajaADondeLLega() {
 		ingenieroReal.caminar(4);
 		assertEquals(0 , mapaReal.getPunto(4));
+	}
+	
+	//Ejercito
+	@Test
+	void ejercitoCamina() {
+		ejercitoReal.aniadirIntegrante(caballeroMock);
+		ejercitoReal.aniadirIntegrante(ingenieroMock);
+		
+		ejercitoReal.caminar(1);
+	
+		verify(caballeroMock).caminar(1);
+		verify(ingenieroMock).caminar(1);
+	}
+	
+	@Test
+	void ejercitoAgregaIntegrantesYcaminaYcambiaPosicion() {
+		ejercitoReal.aniadirIntegrante(caballeroMock);
+		ejercitoReal.aniadirIntegrante(ingenieroMock);
+		
+		ejercitoReal.caminar(2);
+		
+		assertEquals(2,ejercitoReal.getPosicion());
 	}
 }

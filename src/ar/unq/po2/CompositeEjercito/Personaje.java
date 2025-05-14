@@ -9,6 +9,9 @@ public abstract class Personaje {
 	protected Mapa mapa; // el mapa es solo unas coordenadas en x donde en cada posicion se accede al caminar
 	protected int posicion;//La posicion en x es donde está en el mapa
 	
+	public int getPosicion() {
+		return posicion;
+	}
 	public abstract void caminar(int x);
 	public abstract void aniadirIntegrante(Personaje p);
 	public abstract void agregarLaja(int x);
