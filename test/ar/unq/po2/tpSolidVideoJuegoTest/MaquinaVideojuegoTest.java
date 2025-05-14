@@ -1,5 +1,5 @@
 package ar.unq.po2.tpSolidVideoJuegoTest;
-
+/**
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import ar.unq.po2.tpSolidVideoJuego.MaquinaVideojuego;
 //import static org.mockito.Mockito.*;
-
+*/
 /**
 class MaquinaVideojuegoTest {
 	

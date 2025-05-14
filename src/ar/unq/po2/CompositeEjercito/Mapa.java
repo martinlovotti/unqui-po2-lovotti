@@ -5,7 +5,8 @@ import java.util.Collections;
 import java.util.*;
 
 public class Mapa {
-    private String nombre;
+    @SuppressWarnings("unused")
+	private String nombre;
     private List<Integer> puntos;
 
     public Mapa(String n) {
