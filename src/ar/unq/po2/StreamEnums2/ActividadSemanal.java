@@ -27,5 +27,13 @@ public class ActividadSemanal{
         return dia == DiaDeLaSemana.JUEVES || dia == DiaDeLaSemana.VIERNES
                 || dia == DiaDeLaSemana.SABADO || dia == DiaDeLaSemana.DOMINGO;
     }
+    
+    public Deporte getDeporte() {
+        return this.deporte;
+    }
+    
+    public int duracion() {
+        return this.duracion;
+    }
 }
 	
