@@ -1,7 +1,7 @@
 package ar.unq.po2.StreamEnums2;
 
 import java.time.LocalTime;
-
+//Prueba
 public class ActividadSemanal{
 	private DiaDeLaSemana dia;
     private LocalTime horaInicio;
